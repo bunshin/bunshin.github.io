@@ -26,6 +26,11 @@
             <header class="major">
               <h2>Image Crop Demo</h2>
             </header>
+            <div class='row'>
+              <div class="12u 12u(mobile)">
+                <div id="preview"></div>
+              </div>
+            </div>
             <div class="row">
               <div class="12u 12u(mobile)">
                 <ul class="actions">
@@ -35,11 +40,6 @@
                   <!--<a href="#" class="image featured"><img id="crop" src="http://c1.staticflickr.com/9/8681/16772114992_815fb3721d_n.jpg" alt="" /></a>-->
                   <a href="#" class="image featured"><img id="crop" src="images/ios8.png" alt="" /></a>
                 </section>
-              </div>
-              <div class='row'>
-                <div class="12u 12u(mobile)">
-                  <div id="preview"></div>
-                </div>
               </div>
             </div>
           </section>
@@ -63,8 +63,7 @@ $(function(){
     strict: false
   });
   $('.crop').click(function(){
-    $('#crop').cropper('getCroppedCanvas');
-    //$('#preview').html($('#crop').cropper('getCroppedCanvas'));
+    $('#preview').html($('#crop').cropper('getCroppedCanvas'));
     })
 });
 </script>
